@@ -1,4 +1,178 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canominerales Group Ltda.</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  color: #f4b400;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1581093588401-22a8c0b1d0c5') center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.btn {
+  background: #f4b400;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 40px;
+}
+
+.services {
+  background: #f4f4f4;
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <img src="logo.jpg" alt="Logo">
+  <div>
+    <a href="#">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Canominerales Group Ltda.</h1>
+  <p>Soluciones integrales en minería y comercialización de minerales</p>
+  <a href="#contacto" class="btn">Contáctanos</a>
+</section>
+
+<!-- SERVICIOS -->
+<section class="services" id="servicios">
+  <h2>Nuestros Servicios</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Exploración Minera</h3>
+      <p>Identificación y evaluación de recursos minerales.</p>
+    </div>
+    <div class="card">
+      <h3>Comercialización</h3>
+      <p>Compra y venta de minerales en mercados nacionales e internacionales.</p>
+    </div>
+    <div class="card">
+      <h3>Asesoría Técnica</h3>
+      <p>Consultoría especializada en proyectos mineros.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="about" id="nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Canominerales Group Ltda. es una empresa dedicada al desarrollo,
+    exploración y comercialización de recursos minerales, ofreciendo soluciones
+    eficientes y sostenibles en el sector minero.
+  </p>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+  <h2>Contacto</h2>
+  <p style="text-align:center;">
+    📍 Av. La Arboleda 110, La Molina - Lima, Perú<br>
+    📱 WhatsApp: +51 947 136 071<br>
+    ✉️ Email: info@canominerales.com
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Canominerales Group Ltda. - Todos los derechos reservados
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
