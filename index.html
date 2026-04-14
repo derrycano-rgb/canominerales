@@ -4,275 +4,180 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Canominerales Group Ltda.</title>
+
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
+  font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
-header {
-  background:#0d1117;
-  color:#fff;
-  padding:15px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position: sticky;
-  top:0;
-  z-index:1000;
-}
-
-header img {
-  height:50px;
-}
-
+/* NAV LINKS */
 nav a {
-  color:white;
-  margin-left:25px;
-  text-decoration:none;
-  font-weight:500;
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color:#25D366;
+  color: #d4af37;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(139,0,0,0.85), rgba(139,0,0,0.85)),
+              url('https://images.unsplash.com/photo-1581093588401-22a8c0b1d0c5') center/cover;
+  color: white;
+  padding: 120px 40px;
 }
 
 /* SECCIONES */
 section {
-  padding:80px 40px;
-}
-
-h1 {
-  font-size:42px;
-}
-
-h2 {
-  font-size:32px;
-  margin-bottom:20px;
+  padding: 60px 40px;
 }
 
 /* CATÁLOGO */
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
-  margin-top:40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
 .card {
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover {
-  transform:translateY(-5px);
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left;
 }
 
 .card img {
-  width:100%;
-  border-radius:10px;
+  width: 100%;
 }
 
-.card h3 {
-  margin-top:15px;
-}
-
-.card p {
-  color:#555;
-}
-
-/* BOTÓN */
 .btn {
-  background:#25D366;
-  color:white;
-  padding:12px 20px;
-  display:inline-block;
-  margin-top:10px;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:bold;
-}
-
-/* FOOTER */
-footer {
-  background:#0d1117;
-  color:white;
-  text-align:center;
-  padding:25px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 </style>
-
-
 </head>
 
 <body>
 
-<header>
-  <img src="logo.jpg">
+<!-- BARRA SUPERIOR -->
+<div style="background:black; color:white; padding:8px 40px; display:flex; justify-content:space-between;">
+  <div>📞 +51 947 136 071</div>
+  <div>✉️ canominerales@canominerales.com</div>
+</div>
+
+<!-- HEADER -->
+<header style="background:#8B0000; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;">
+  <img src="logo.jpg" style="height:60px;">
+
   <nav>
+    <a href="#">Inicio</a>
     <a href="#productos">Productos</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
 
-<!-- PRESENTACIÓN -->
-<section style="text-align:center;">
-  <h1>Canominerales Group Ltda.</h1>
-  <p style="max-width:700px; margin:auto;">
-    Empresa especializada en la comercialización de maquinaria e insumos
-    para la industria metalúrgica, ofreciendo soluciones confiables
-    y eficientes para el sector industrial.
+<!-- HERO -->
+<section class="hero">
+  <h1 style="font-size:48px;">CANOMINERALES GROUP LTDA</h1>
+  <p style="font-size:20px;">
+    MAQUINARIA – INSUMOS – SOLUCIONES PARA LA INDUSTRIA METALÚRGICA
   </p>
+
+  <a href="#productos" style="background:#d4af37; color:black; padding:15px 30px; text-decoration:none; margin-top:20px; display:inline-block;">
+    Ver Productos
+  </a>
 </section>
 
 <!-- CATÁLOGO -->
-<section id="productos">
+<section id="productos" style="background:#f5f5f5;">
   <h2 style="text-align:center;">Catálogo de Productos</h2>
 
   <div class="grid">
-<div class="card">
-  <img src="maquina1.jpg">
 
- 
-
-<div class="card">
-  <img src="horno_nuevo.jpg">
-
-  <h3>Hornos de Inducción para Fusión (Nuevos)</h3>
-
-  <p>
-    • Equipos nuevos<br>
-    • Alta eficiencia energética<br>
-    • Aplicación en fundición de metales
-  </p>
-
-  <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20hornos%20de%20inducción%20nuevos"
-     class="btn">
-     Solicitar cotización
-  </a>
-</div>
-<div class="card">
-  <img src="horno_usado.jpg">
-
-  <h3>Hornos de Inducción para Fusión (Segunda Mano)</h3>
-
-  <p>
-    • Equipos operativos<br>
-    • Alternativa económica<br>
-    • Disponibilidad inmediata
-  </p>
-
-  <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20hornos%20de%20inducción%20de%20segunda%20mano"
-     class="btn">
-     Solicitar cotización
-  </a>
-</div>
-
-
+    <!-- HORNOS NUEVOS -->
     <div class="card">
-  <img src="maquina2.jpg">
+      <img src="horno_nuevo.jpg">
+      <h3>Hornos de Inducción (Nuevos)</h3>
+      <p>Equipos nuevos de alta eficiencia para fundición de metales.</p>
+      <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20hornos%20nuevos" class="btn">Cotizar</a>
+    </div>
 
-  <h3>Maquinaria Industrial Nueva</h3>
-
-  <p>
-    • Equipos nuevos<br>
-    • Alta eficiencia y rendimiento<br>
-    • Garantía y soporte técnico<br>
-    • Aplicaciones metalúrgicas industriales
-  </p>
-
-  <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20maquinaria%20industrial%20nueva"
-     class="btn">
-     Solicitar cotización
-  </a>
-</div>
-<div class="card">
-  <img src="maquina2.jpg">
-
-  <h3>Maquinaria Industrial de Segunda Mano</h3>
-
-  <p>
-    • Equipos revisados y operativos<br>
-    • Alternativa económica<br>
-    • Disponibilidad inmediata<br>
-    • Ideal para optimización de costos
-  </p>
-
-  <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20maquinaria%20industrial%20de%20segunda%20mano"
-     class="btn">
-     Solicitar cotización
-  </a>
-</div>
-
-
+    <!-- HORNOS USADOS -->
     <div class="card">
-      <img src="maquina3.jpg">
+      <img src="horno_usado.jpg">
+      <h3>Hornos de Inducción (Segunda Mano)</h3>
+      <p>Equipos operativos, alternativa económica con disponibilidad inmediata.</p>
+      <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20hornos%20usados" class="btn">Cotizar</a>
+    </div>
+
+    <!-- MAQUINARIA NUEVA -->
+    <div class="card">
+      <img src="maquina_nueva.jpg">
+      <h3>Maquinaria Industrial Nueva</h3>
+      <p>Equipos nuevos con alto rendimiento y soporte técnico.</p>
+      <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20maquinaria%20nueva" class="btn">Cotizar</a>
+    </div>
+
+    <!-- MAQUINARIA USADA -->
+    <div class="card">
+      <img src="maquina_usada.jpg">
+      <h3>Maquinaria Industrial de Segunda Mano</h3>
+      <p>Equipos revisados, listos para operar y optimizar costos.</p>
+      <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20maquinaria%20usada" class="btn">Cotizar</a>
+    </div>
+
+    <!-- INSUMOS -->
+    <div class="card">
+      <img src="insumos.jpg">
       <h3>Insumos Metalúrgicos</h3>
-      <p>Materiales industriales de alta calidad.</p>
-      <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20los%20Insumos%20Metalúrgicos" class="btn">Cotizar</a>
+      <p>Materiales industriales de alta calidad para procesos productivos.</p>
+      <a href="https://wa.me/51947136071?text=Hola,%20quiero%20cotizar%20insumos" class="btn">Cotizar</a>
     </div>
 
   </div>
 </section>
 
-
 <!-- NOSOTROS -->
-<section id="nosotros" style="text-align:center;">
-  <h2>Sobre Nosotros</h2>
-  <p style="max-width:700px; margin:auto;">
-    Canominerales Group Ltda. se dedica a la distribución de equipos e insumos
-    industriales para procesos metalúrgicos, brindando atención personalizada
-    y productos de alta calidad.
+<section id="nosotros">
+  <h2 style="text-align:center;">Sobre Nosotros</h2>
+  <p style="max-width:800px; margin:auto; text-align:center;">
+    Canominerales Group Ltda. es una empresa especializada en la comercialización
+    de maquinaria e insumos para la industria metalúrgica, brindando soluciones
+    eficientes y productos de alta calidad.
   </p>
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto" style="text-align:center;">
   <h2>Contacto</h2>
-
   <p>📍 Av. La Arboleda 110, La Molina - Lima, Perú</p>
   <p>📞 +51 947 136 071</p>
   <p>✉️ <a href="mailto:canominerales@canominerales.com">canominerales@canominerales.com</a></p>
-
-
-  <a href="https://wa.me/51947136071"
-     class="btn">
-     Contactar por WhatsApp
-  </a>
 </section>
 
-
-<footer>
+<!-- FOOTER -->
+<footer style="background:#111; color:white; text-align:center; padding:20px;">
   © 2026 Canominerales Group Ltda.
 </footer>
+
+<!-- BOTÓN FLOTANTE -->
 <a href="https://wa.me/51947136071?text=Hola,%20quiero%20información"
    target="_blank"
-   style="
-     position: fixed;
-     bottom: 20px;
-     right: 20px;
-     background: #25D366;
-     width: 60px;
-     height: 60px;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: white;
-     font-size: 28px;
-     text-decoration: none;
-     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-     z-index: 1000;
-   ">
+   style="position:fixed; bottom:20px; right:20px; background:#25D366; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:28px; text-decoration:none;">
    💬
 </a>
 
 </body>
 </html>
+
