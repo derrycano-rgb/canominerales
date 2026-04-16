@@ -93,7 +93,30 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  position: relative;
 }
+
+/* EFECTO LÍNEA PREMIUM */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 </style>
 <meta name="description" content="Venta de hornos de inducción, maquinaria e insumos metalúrgicos en Perú. Equipos nuevos y usados. Canominerales Group Ltda.">
 
