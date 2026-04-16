@@ -133,7 +133,25 @@ nav a:hover::after {
   align-items: center;     /* CENTRADO HORIZONTAL */
   text-align: center;
   padding: 40px 0;
+}.destacado {
+  border: 2px solid #d4af37;
+  transform: scale(1.03);
+  position: relative;
 }
+
+.destacado::before {
+  content: "RECOMENDADO";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #d4af37;
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 </style>
 <meta name="description" content="Venta de hornos de inducción, maquinaria e insumos metalúrgicos en Perú. Equipos nuevos y usados. Canominerales Group Ltda.">
 
@@ -235,7 +253,7 @@ nav a:hover::after {
 </div>
 
 <!-- 2 TONELADAS -->
-<div class="card">
+<div class="card destacado">
   <img src="horno_2t.jpg">
   <h3>Horno de Inducción 2 Toneladas</h3>
   <p>
