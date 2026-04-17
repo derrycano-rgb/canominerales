@@ -55,11 +55,11 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
+
 
 /* BOTONES */
 .btn {
@@ -72,7 +72,12 @@ body {
   border-radius: 5px;
   font-weight: bold;
   transition: 0.3s;
+}.btn {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
 }
+
 
 .btn:hover {
   background: #1ebe5d;
@@ -121,10 +126,12 @@ nav a:hover::after {
   align-items: center;     /* CENTRADO HORIZONTAL */
   text-align: center;
   padding: 40px 0;
-}.destacado {
+.destacado {
   border: 2px solid #d4af37;
-  transform: scale(1.03);
-  position: relative;
+  transform: scale(1.05);
+  background: #fffdf5;
+}
+
 }
 
 .destacado::before {
@@ -174,7 +181,13 @@ nav a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+}.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch; /* CLAVE */
 }
+
 
 /* NAV MEJORADO */
 nav a {
