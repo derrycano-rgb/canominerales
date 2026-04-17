@@ -106,12 +106,31 @@ body {
   transition: 0.3s;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  position: relative;
+  font-size: 15px;
+}
+
+/* Línea animada */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
 nav a:hover::after {
   width: 100%;
+}
 
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 
