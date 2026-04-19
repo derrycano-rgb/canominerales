@@ -289,6 +289,34 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 15px;
+}
 
 
 
@@ -783,16 +811,17 @@ Ofrecemos maquinaria industrial para procesos metalúrgicos, con equipos nuevos 
 
     
   <!-- MAQUINARIA USADA -->
+<!-- MAQUINARIA USADA -->
 <div class="container">
 
   <h2 class="section-title">Maquinaria de Segunda Mano</h2>
   <div class="section-line"></div>
 
-  <div class="grid">
+  <div class="cards-container">
 
     <!-- TARJETA 1 -->
     <div class="card">
-      <img src="maquina_usada.jpg">
+      <img src="maquina_usada.jpg" alt="Maquinaria industrial usada">
       <h3>Maquinaria Industrial de Segunda Mano</h3>
 
       <p>
@@ -812,7 +841,7 @@ Ofrecemos maquinaria industrial para procesos metalúrgicos, con equipos nuevos 
 
     <!-- TARJETA 2 -->
     <div class="card">
-      <img src="mezcladora_usada.jpg">
+      <img src="mezcladora_usada.jpg" alt="Mezcladora de arena usada">
       <h3>Mezcladora Continua de Arena</h3>
 
       <p>
@@ -834,14 +863,12 @@ Ofrecemos maquinaria industrial para procesos metalúrgicos, con equipos nuevos 
     </div>
 
     <!-- TARJETA 3 -->
- 
-    <!-- TARJETA 3 -->
     <div class="card">
-      <img src="maquinaria_mineria.jpg">
+      <img src="maquinaria_mineria.jpg" alt="Maquinaria para minería y construcción">
       <h3>Maquinaria para Minería y Construcción</h3>
 
       <p>
-        Equipos para operaciones mineras y construcción adaptados a diferentes niveles de producción.
+        Equipos para operaciones mineras y de construcción adaptados a distintos niveles de producción.
       </p>
 
       <ul class="beneficios">
@@ -858,7 +885,7 @@ Ofrecemos maquinaria industrial para procesos metalúrgicos, con equipos nuevos 
 
     <!-- TARJETA 4 -->
     <div class="card">
-      <img src="miscelaneos_fundicion.jpg">
+      <img src="miscelaneos_fundicion.jpg" alt="Equipos de fundición usados">
       <h3>Misceláneos para Fundición</h3>
 
       <p>
@@ -878,7 +905,9 @@ Ofrecemos maquinaria industrial para procesos metalúrgicos, con equipos nuevos 
     </div>
 
   </div>
+
 </div>
+
 
     <!-- INSUMOS -->
     <div class="card">
