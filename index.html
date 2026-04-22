@@ -137,15 +137,22 @@ section h2 {
   margin: auto;
 }
 
-.card {
+..card {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   padding: 25px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
 }
 
 .card img {
