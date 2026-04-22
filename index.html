@@ -485,7 +485,51 @@ nav a:hover {
 
 .logo img {
   width: auto;
+}/* ===== HEADER PRO LIMPIO ===== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b0b0b;
+  padding: 15px 30px;
 }
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MENÚ */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
 
 
 </style>
@@ -503,7 +547,7 @@ nav a:hover {
 <header>
 
   <div class="logo">
-    <img src="imagenes/logo.jpg">
+    <img src="logo.jpg">
     <span>CANOMINERALES</span>
   </div>
 
@@ -513,6 +557,9 @@ nav a:hover {
     <a href="#">Nosotros</a>
     <a href="#">Contacto</a>
   </nav>
+
+</header>
+
 
 </header>
 <img src="https://via.placeholder.com/150x60" style="border:2px solid red;">
