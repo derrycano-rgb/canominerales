@@ -216,62 +216,58 @@ section h2 {
 <body>
 
 <!-- BARRA -->
-<div style="background:black; color:white; padding:8px 20px; display:flex; justify-content:space-between;">
-  <div>📞 +51 947 136 071</div>
-  <div>✉️ canominerales@canominerales.com</div>
+<div class="topbar">
+  <span>📞 +51 947 136 071</span>
+  <span>✉️ canominerales@canominerales.com</span>
 </div>
 
-<!-- HEADER -->
 <header>
   <div class="logo">
     <img src="https://www.dropbox.com/scl/fi/nt37pfzm35q3e6jthjblz/LOGO-WEB4.jpg?rlkey=gw1ju1cn5fiq3v8mkrfkcesas&st=10kkuchi&raw=1" alt="Canominerales">
-    <span>CANOMINERALES</span>
   </div>
 
   <nav>
     <a href="#">Inicio</a>
     <a href="#productos">Productos</a>
-    <a href="#">Nosotros</a>
-    <a href="#">Contacto</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>CANOMINERALES GROUP LTDA</h1>
-  <p>MAQUINARIA – INSUMOS – SOLUCIONES METALÚRGICAS</p>
-  <a href="#productos" class="btn-hero">Ver Productos</a>
+  <div class="hero-content">
+    <h1>CANOMINERALES GROUP LTDA</h1>
+    <p>Maquinaria, insumos y soluciones metalúrgicas para la industria</p>
+    <a href="#productos" class="btn">Ver Productos</a>
+  </div>
 </section>
 
 <!-- PRODUCTOS -->
-<section class="container" id="productos">
-  <h2 class="section-title">EQUIPOS DE FUNDICIÓN</h2>
-<div class="card-horizontal">
+<section id="productos">
+  <h2>EQUIPOS DE FUNDICIÓN</h2>
 
-  <div class="contenido">
-    <h3>Horno de Inducción para Fusión de 2 Toneladas</h3>
-
-    <p>
-      Precio: USD 120,000<br>
-      Capacidad: 2000 kg<br>
-      Potencia: 1000 kW<br>
-      Frecuencia: 1000 Hz<br>
-      Sistema hidráulico y refrigeración completos<br>
-      Con un crisol<br><br>
-
-      ✔ Alta eficiencia energética<br>
-      ✔ Operación estable<br>
-      ✔ Producción continua
-    </p>
-
-    <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
+  <div class="card">
+    <img src="horno_1t.jpg" alt="Horno de Inducción 1 Tonelada">
+    <div class="card-content">
+      <h3>Horno de Inducción 1 Tonelada</h3>
+      <p>
+        Capacidad: 1000 kg<br>
+        Potencia: 500 kW<br>
+        Equipo diseñado para procesos de fundición con alto rendimiento y eficiencia operativa.
+      </p>
+      <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
+    </div>
   </div>
-<div class="imagenes">
-  <div class="img-placeholder">Imagen 1</div>
-  <div class="img-placeholder">Imagen 2</div>
-</div>
 
-</body>
-</html>
-
-
+  <div class="card">
+    <img src="horno_2t.jpg" alt="Horno de Inducción 2 Toneladas">
+    <div class="card-content">
+      <h3>Horno de Inducción 2 Toneladas</h3>
+      <p>
+        Capacidad: 2000 kg<br>
+        Alto desempeño para operaciones industriales de mayor escala.
+      </p>
+      <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
+    </div>
+  </div>
+</section>
