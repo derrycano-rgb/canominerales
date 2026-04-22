@@ -186,7 +186,65 @@ nav a:hover {
     width: 100%;
     height: auto;
   }
+}.card-horizontal {
+  display: flex;
+  gap: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  align-items: center;
 }
+
+/* TEXTO */
+.contenido {
+  flex: 1;
+}
+
+/* IMÁGENES */
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imagenes img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* BOTÓN */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #28c76f;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card-horizontal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagenes {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .imagenes img {
+    width: 45%;
+  }
+}
+
 
 
 </style>
@@ -219,7 +277,6 @@ nav a:hover {
 <!-- PRODUCTOS -->
 <section class="container" id="productos">
   <h2 class="section-title">EQUIPOS DE FUNDICIÓN</h2>
-
 <div class="card-horizontal">
 
   <div class="contenido">
@@ -241,15 +298,14 @@ nav a:hover {
     <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
   </div>
 
-  <img src="horno_2t.jpg">
+  <div class="imagenes">
+    <img src="horno_2t.jpg">
+    <img src="horno_2t_2.jpg">
+  </div>
 
 </div>
 
-    
-  
 
-  </div>
-</section>
 
 </body>
 </html>
