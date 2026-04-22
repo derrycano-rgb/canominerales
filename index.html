@@ -141,6 +141,52 @@ nav a:hover {
   object-fit: cover;
   border-radius: 10px;
 }
+.cards-horizontal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* TARJETA */
+.card-horizontal {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+/* TEXTO */
+.contenido {
+  flex: 1;
+}
+
+/* IMAGEN */
+.card-horizontal img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cards-horizontal {
+    grid-template-columns: 1fr;
+  }
+
+  .card-horizontal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-horizontal img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 </style>
@@ -173,8 +219,6 @@ nav a:hover {
 <!-- PRODUCTOS -->
 <section class="container" id="productos">
   <h2 class="section-title">EQUIPOS DE FUNDICIÓN</h2>
-
-<div style="display:flex; flex-direction:column; gap:30px;">
 
 <div class="card-horizontal">
 
