@@ -243,9 +243,36 @@ nav a:hover {
   .imagenes img {
     width: 45%;
   }
+}.card-horizontal {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 15px;
+  align-items: center;
 }
 
+/* TEXTO */
+.card-horizontal .contenido {
+  flex: 2;
+}
 
+/* IMÁGENES CONTENEDOR */
+.card-horizontal .imagenes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* IMÁGENES */
+.card-horizontal .imagenes img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 </style>
 </head>
@@ -304,8 +331,6 @@ nav a:hover {
   </div>
 
 </div>
-
-
 
 </body>
 </html>
