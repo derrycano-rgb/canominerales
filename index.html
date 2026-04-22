@@ -26,15 +26,16 @@ body {
 
 /* HEADER */
 header {
+  background: #0b0b0b;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #111;
-  color: white;
-<img src="https://via.placeholder.com/150" style="height:50px;">
 
-
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
 <nav>
   <a href="#">Inicio</a>
@@ -285,9 +286,30 @@ nav a:hover {
 
 .card-horizontal p strong {
   color: #0d3b66;
+}nav a {
+  color: white;            /* 👈 cambia azul a blanco */
+  text-decoration: none;   /* quita subrayado */
+  margin-left: 25px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
+nav a:hover {
+  color: #d4af37;          /* dorado elegante al pasar mouse */
+}
+.logo img {
+  height: 60px; /* antes 50 → más presencia */
+}
 
+.logo span {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+header {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
 
 </style>
 </head>
