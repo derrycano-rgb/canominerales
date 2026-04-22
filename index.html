@@ -112,7 +112,36 @@ nav a:hover {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
+}/* TARJETA HORIZONTAL PRO */
+.card-horizontal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
+
+.card-horizontal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+.card-horizontal .contenido {
+  flex: 1;
+}
+
+/* IMAGEN */
+.card-horizontal img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 </style>
 </head>
