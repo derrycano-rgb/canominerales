@@ -289,6 +289,92 @@ section h2 {
   font-weight: bold;
   color: #d4a017;
   padding: 0 18px 10px;
+}.productos {
+  padding: 60px 40px;
+  background: #f5f7fa;
+}
+
+.titulo-seccion {
+  font-size: 28px;
+  color: #0b2c4d;
+  margin: 45px 0 25px;
+  border-left: 6px solid #d4a017;
+  padding-left: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #0b2c4d;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: auto;
+  display: block;
+  background: #0b2c4d;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.destacado {
+  border: 2px solid #d4a017;
+}
+
+.badge {
+  background: #d4a017;
+  color: #0b2c4d;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.precio {
+  color: #d4a017;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 }
 }
