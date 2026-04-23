@@ -264,6 +264,31 @@ section h2 {
   .card h3 {
     min-height: auto;
   }
+}/* TARJETA DESTACADA */
+.destacado {
+  border: 2px solid #d4a017;
+  position: relative;
+}
+
+/* ETIQUETA DESTACADO */
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #d4a017;
+  color: #0b2c4d;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* PRECIO */
+.precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d4a017;
+  padding: 0 18px 10px;
 }
 }
 }
@@ -321,27 +346,24 @@ section h2 {
     </div>
 
     <!-- TARJETA 2 -->
-    <div class="card">
-      <img src="horno2.jpg">
-      <h3>Horno de Inducción 2 Toneladas</h3>
-      <p>
-        Capacidad: 2000 kg<br>
-        Potencia: 1000 kW<br>
-        Frecuencia: 1000 Hz
-      </p>
-      <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
-    </div>
+ <div class="card destacado">
+  <img src="horno2.jpg">
+  
+  <div class="badge">EQUIPO DESTACADO</div>
 
-    <!-- TARJETA 3 -->
-    <div class="card">
-      <img src="horno3.jpg">
-      <h3>Componentes para Sistemas de Fusión</h3>
-      <p>
-        Aplicación: Hornos de inducción<br>
-        Componentes nuevos<br>
-        Alta eficiencia operativa
-      </p>
-      <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
+  <h3>Horno de Inducción 2 Toneladas</h3>
+
+  <p>
+    Capacidad: 2000 kg<br>
+    Potencia: 1000 kW<br>
+    Frecuencia: 1000 Hz<br>
+    Condición: Nuevo
+  </p>
+
+  <div class="precio">USD 120,000</div>
+
+  <a href="https://wa.me/51947136071" class="btn">Cotizar</a>
+
     </div>
 
     <!-- TARJETA 4 -->
